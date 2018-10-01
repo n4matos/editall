@@ -1,0 +1,125 @@
+/*
+* Color
+*/
+
+
+/*
+* Background color
+*/
+
+.bg-base-color {
+    background-color: #373958 !important;
+}
+
+
+/*
+* Border color
+*/
+
+.border-base-color {
+    border-color: #373958 !important;
+}
+
+
+/*
+* Button color
+*/
+
+.btn-base-color {
+    background-color: #373958 !important;
+}
+
+
+/*
+* Button color - hover
+*/
+
+.btn-hover-base-color:hover {
+    background-color: #373958 !important;
+}
+
+
+/*
+* Features Block
+*/
+
+.features-block:before {
+    background: -moz-linear-gradient(top, rgba(55, 57, 88, 0) 0%, rgba(55, 57, 88, 0.9) 15%, rgba(55, 57, 88, 0.9) 85%, rgba(55, 57, 88, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 57, 88, 0)), color-stop(15%, rgba(55, 57, 88, 0.9)), color-stop(85%, rgba(55, 57, 88, 0.9)), color-stop(100%, rgba(55, 57, 88, 0)));
+    background: -webkit-linear-gradient(top, rgba(55, 57, 88, 0) 0%, rgba(55, 57, 88, 0.9) 15%, rgba(55, 57, 88, 0.9) 85%, rgba(55, 57, 88, 0) 100%);
+    background: -o-linear-gradient(top, rgba(55, 57, 88, 0) 0%, rgba(55, 57, 88, 0.9) 15%, rgba(55, 57, 88, 0.9) 85%, rgba(55, 57, 88, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(55, 57, 88, 0) 0%, rgba(55, 57, 88, 0.9) 15%, rgba(55, 57, 88, 0.9) 85%, rgba(55, 57, 88, 0) 100%);
+    background: linear-gradient(to bottom, rgba(55, 57, 88, 0) 0%, rgba(55, 57, 88, 0.9) 15%, rgba(55, 57, 88, 0.9) 85%, rgba(55, 57, 88, 0) 100%);
+}
+.features-block:hover .block-icon {
+    background-color: #373958;
+}
+.features-block:hover .block-icon i {
+    color: #ffffff;
+}
+.features-block .block-icon {
+    border: 1px solid #373958;
+}
+.features-block .block-icon i {
+    color: #373958;
+}
+
+
+/*
+* Flickity
+*/
+
+.carousel-custom .flickity-page-dots .dot.is-selected {
+    background: #373958;
+}
+
+
+/*
+* Heading style
+*/
+
+.title-underline-base-color {
+    border-color: #373958;
+}
+.title-underline-thick-base-color {
+    border-color: #373958;
+}
+.title-sideline-base-color:before {
+    background-color: #373958;
+}
+
+
+/*
+* Preloader
+*/
+
+.pace .pace-progress {
+    background-color: #373958;
+}
+
+
+/*
+* Text color
+*/
+
+.text-base-color {
+    color: #373958 !important;
+}
+
+
+/*
+* Text color (hover)
+*/
+
+.text-hover-base-color:hover {
+    color: #373958 !important;
+}
+
+
+/*
+* Timeline
+*/
+
+.timeline .timeline-item:before {
+    background-color: #373958 !important;
+}
