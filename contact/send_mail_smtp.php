@@ -34,13 +34,12 @@ if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']
     
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = 4;
     $mail->Debugoutput = 'html';
-    $mail->Host = SMTP_HOST;
+    $mail->Host = gethostbyname('SMTP_HOST');
     $mail->Port = SMTP_PORT;
-    $mail->SMTPSecure = 'tls';
-    $mail->SMTPAutoTLS = false;
-    $mail->SMTPAuth = TRUE;
+    $mail->SMTPSecure = 'ssl';
+    $mail->SMTPAuth = true;
     $mail->Username = SMTP_USERNAME;
     $mail->Password = SMTP_PASSWORD;
     
