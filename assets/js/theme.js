@@ -399,9 +399,9 @@
         // Send mail
         function send_mail($form, $btnForm){
             var defaultMessage = $btnForm.html(),
-                sendingMessage = 'Loading...',
-                errorMessage = 'Error Sending!',
-                okMessage = 'Email Sent!';
+                sendingMessage = 'Carregando...',
+                errorMessage = 'Erro ao enviar email!',
+                okMessage = 'Email enviado!';
             
             $btnForm.html(sendingMessage);
             
@@ -414,6 +414,7 @@
                     if (data === true){
                         $btnForm.html(okMessage);
                         $form.find('input[type="text"], input[type="email"], textarea').val('');
+                        grecaptcha.reset();
                     }
                     else{
                         $btnForm.html(errorMessage);

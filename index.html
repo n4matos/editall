@@ -42,8 +42,9 @@
 		<link rel="manifest" href="assets/favicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		
+        <meta name="theme-color" content="#ffffff">
+        
+		<script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body id="page-top">
         
@@ -599,7 +600,7 @@
                     <!-- //.col-lg-6 -->
                     
                     <div class="col-lg-6 mt-5 mt-lg-0">
-                        <form action="contact/send_mail_smtp.php" method="post" id="form-contact">
+                        <form action="email/send.php" method="post" id="form-contact">
                             <div class="form-group">
                                 <span class="d-block font-alt letter-spacing-1 text-medium text-uppercase text-white">Seu Nome</span>
                                 <input type="text" name="name" class="font-alt form-control mt-2 required" id="name" placeholder="">
@@ -619,7 +620,8 @@
                             <!-- //.form-group -->
                             
                             <span class="d-block font-alt letter-spacing-1 text-small text-uppercase text-white">*Por favor, preencha todos os campos corretamente</span>
-                            <button type="submit" class="btn btn-shadow btn-base-color mt-4 text-uppercase" id="btn-form-contact">Enviar Mensagem</button>
+                            <div class="g-recaptcha mt-3" data-sitekey="6LerM3UUAAAAAN3xO2xc08vHUSJGPR5oLIpvaJ1P"></div>
+                            <button type="submit" class="btn btn-shadow btn-base-color mt-3 text-uppercase" id="btn-form-contact">Enviar Mensagem</button>
                         </form>
                     </div>
                     <!-- //.col-lg-6 -->

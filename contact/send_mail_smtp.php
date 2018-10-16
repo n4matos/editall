@@ -2,13 +2,19 @@
 require 'PHPMailer/PHPMailerAutoload.php';
 require 'PHPMailer/extras/Security.php';
 
-define('SMTP_HOST', 'smtp.gmail.com'); // Hostname of the mail server
-define('SMTP_USERNAME', 'contato@editall.com.br'); // Username for SMTP authentication any valid email created in your domain
-define('SMTP_PASSWORD', 'editallestudos2018'); // Password for SMTP authentication
-define('SMTP_PORT', 587); // Port of the SMTP like to be 25, 80, 465 or 587
+//define('SMTP_HOST', 'smtp.gmail.com'); // Hostname of the mail server
+//define('SMTP_USERNAME', 'contato@editall.com.br'); // Username for SMTP authentication any valid email created in your domain
+//define('SMTP_PASSWORD', 'editallestudos2018'); // Password for SMTP authentication
+//define('SMTP_PORT', 587); // Port of the SMTP like to be 25, 80, 465 or 587
+
+define('SMTP_HOST', 'email-ssl.com.br'); // Hostname of the mail server
+define('SMTP_USERNAME', 'douglas.gomes@exegestaoempresarial.com.br'); // Username for SMTP authentication any valid email created in your domain
+define('SMTP_PASSWORD', 'Coligado1*'); // Password for SMTP authentication
+define('SMTP_PORT', 465); // Port of the SMTP like to be 25, 80, 465 or 587
 
 // To address who will receive this email 
-$to = 'contato@editall.com.br';
+//$to = 'contato@editall.com.br';
+$to = 'douglas.gomes@exegestaoempresarial.com.br';
 
 $security = new Security();
 
@@ -31,7 +37,7 @@ if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']
     <tr><td valign="top">Email:</td><td>' . $email . '</td></tr>
     <tr><td valign="top">Message:</td><td>' . $message . '</td></tr>
     </table> ';
-    
+
     $mail = new PHPMailer;
     $mail->isSMTP();
     $mail->SMTPDebug = 4;
