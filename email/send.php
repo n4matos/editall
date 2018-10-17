@@ -15,22 +15,24 @@ $mail = new PHPMailer(true);
 $security = new Security();
 $client = new Client();
 
-if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']) AND isset($_POST['g-recaptcha-response']))
+if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['phone']) AND isset($_POST['message']) AND isset($_POST['g-recaptcha-response']))
 {
     $name = $security->xss_clean($_POST['name']);
     $email = $security->xss_clean($_POST['email']);
+	$phone = $security->xss_clean($_POST['phone']);
     $message = $security->xss_clean($_POST['message']);
     
     // Prefedined Variables  
-    $set_from = 'Rinjani Notification Mailer';
-    $subject = 'Rinjani: Message from ' . $name . '!';
+    $set_from = 'Editall Notificação Email';
+    $subject = 'Editall: Mensagem de ' . $name . '!';
 
     // Collecting all content in HTML Table
     $content = '<table width="100%">
-    <tr><td colspan="2"><strong>Contact Details:</strong></td></tr>
-    <tr><td valign="top">Name:</td><td>' . $name . '</td></tr>
+    <tr><td colspan="2"><strong>Detalhes do Contato:</strong></td></tr>
+    <tr><td valign="top">Nome:</td><td>' . $name . '</td></tr>
     <tr><td valign="top">Email:</td><td>' . $email . '</td></tr>
-    <tr><td valign="top">Message:</td><td>' . $message . '</td></tr>
+	<tr><td valign="top">Celular:</td><td>' . $phone . '</td></tr>
+    <tr><td valign="top">Mensagem:</td><td>' . $message . '</td></tr>
     </table> ';
     
     try {

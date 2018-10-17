@@ -589,7 +589,7 @@
                         <span class="bg-base-color d-inline-block mt-4 sep-line-thick-long"></span>
                         
                         <div class="mt-4 text-extra-large text-white">
-                            <p>Nós ficamos abertos em dias de semana das 06:00 às 00:00.</p>
+                            <p>Ficamos abertos em dias de semana das 06:00 às 00:00.</p>
 							<span class="d-block mt-1">E-mail: contato@editall.com.br</span>
                             <span class="d-block mt-1">Telefone: (62) 99999-9999</span>
 							<span class="d-block mt-1">Endereço: St. Bueno, Goiânia - GO, 74175-120</span>
@@ -610,6 +610,12 @@
                             <div class="form-group">
                                 <span class="d-block font-alt letter-spacing-1 text-medium text-uppercase text-white">Seu E-mail</span>
                                 <input type="email" name="email" class="font-alt form-control mt-2 required email" id="email" placeholder="">
+                            </div>
+                            <!-- //.form-group -->
+							
+							<div class="form-group">
+                                <span class="d-block font-alt letter-spacing-1 text-medium text-uppercase text-white">Seu Celular</span>
+                                <input type="text" name="phone" class="font-alt form-control mt-2 required" id="phone">
                             </div>
                             <!-- //.form-group -->
                             
@@ -699,9 +705,17 @@
         <script src="assets/js/jquery.easypiechart.min.js"></script>
         <script src="assets/js/jquery.countdown.min.js"></script>
         <script src="assets/js/jquery.validate.min.js"></script>
+		<script src="assets/js/jquery.mask.min.js"></script>
         
         <!-- Theme JS -->
         <script src="assets/js/theme.js"></script>
-        
+		
+		<!-- MASK JS -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("#phone").mask("(00) 0000-00009")
+		});
+  </script>
+       
     </body>
 </html>
