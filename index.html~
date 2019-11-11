@@ -125,7 +125,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-132393714-1"></script>
 							A melhor sala de estudos de Goiânia
                         </h2> -->
 						
-		        <div class="col-md-12 col-lg-3 mt-5 mt-md-0px-lg-0" style="height: 170px"> </div> <!-- espacamento -->
+		        <div class="col-md-12 col-lg-3 mt-5 mt-md-0 px-lg-0" style="height: 150px"> </div> <!-- espacamento -->
                         
                         <span class="d-block font-alt letter-spacing-2 mb-3 mt-4 text-large text-uppercase text-white">
                             CONFORTO, SILÊNCIO e SEGURANÇA numa LOCALIZAÇÃO ideal PARA VOCÊ otimizar o período de estudos e GARANTIR A SUA APROVAÇÃO!
